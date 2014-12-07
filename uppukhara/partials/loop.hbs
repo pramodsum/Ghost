@@ -19,14 +19,15 @@
             <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
           </p>
         </small>
-        <div class="post-body post-excerpt">
-            <p>{{excerpt words="26"}} <a class="read-more" href="{{url}}">&raquo;</a></p>
+        <div class="post-body">
+            {{content}}
         </div>
         <footer class="post-meta">
             {{> "tags"}}
         </footer>
     </div>
 </article>
+<br><br>
 {{/foreach}}
 </div>
 

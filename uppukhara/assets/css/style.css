@@ -21,3 +21,10 @@
   padding: 20px 0;
 }
 
+img {
+  margin: auto;
+  border-radius: 10px;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

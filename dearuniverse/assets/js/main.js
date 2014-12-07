@@ -1,4 +1,9 @@
 $(document).ready(function() {
+  $(".fc-header").remove();
+  $(".fc-content").remove();
+  $('#calendar').fullCalendar({
+    events: '/posts.json'
+  });
 
   $('body').removeClass('no-js');
 

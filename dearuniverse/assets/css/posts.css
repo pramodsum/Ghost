@@ -10,7 +10,7 @@
 
 .blog-post.title, 
 .blog-main.title  {
-  font-family: Sacramento;
+  font-family: 'Sacramento', cursive;
   font-size: 3em;
   padding-right: 10px;
   margin-top: 0;
@@ -19,7 +19,7 @@
 .blog-post p .date, 
 .blog-main p .date {
   color: rgb(253, 163, 171) !important;
-  font-family: josefin;
+  font-family: 'Josefin Sans', sans-serif;
 }
 #posts {
     padding: 0 2em;

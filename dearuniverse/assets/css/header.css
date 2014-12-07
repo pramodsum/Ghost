@@ -10,7 +10,7 @@
 .intro .intro-body {
     display: table-cell;
     vertical-align: middle;
-    font: 'Sacramento';
+    font-family: 'Sacramento', cursive;
 }
 .intro .intro-body .brand-heading {
     font-size: 40px;
@@ -54,7 +54,7 @@
     border-radius: 5px;
     line-height: 1em;
     background: rgba(255, 255, 255, 0.9);
-    font-family: Sacramento;
+    font-family: 'Sacramento', cursive;
     margin-top: 3em;
 }
 /* This is the subheading that appears on the blue section */
