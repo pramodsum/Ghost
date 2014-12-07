@@ -1,0 +1,112 @@
+.intro {
+    display: table;
+    width: 100%;
+    height: 275px !important;
+    text-align: center;
+    background: -webkit-gradient(linear, center center, center bottom, from(rgba(255, 255, 253, 0)), to(rgba(255, 255, 253, 1))), url("https://s3-us-west-2.amazonaws.com/dearuniverse/header.jpg") no-repeat top center;
+    background-size: cover;
+//    margin-top: -10 !important;
+}
+.intro .intro-body {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'Sacramento', cursive;
+}
+.intro .intro-body .brand-heading {
+    font-size: 40px;
+    color: #ffd800;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+.intro .intro-body .intro-text {
+    font-size: 18px;
+    color: #fff;
+}
+@media(min-width:767px) {
+    .intro {
+        height: 100%;
+        padding: 0;
+    }
+    .intro .intro-body .brand-heading {
+        font-size: 100px;
+    }
+    .intro .intro-body .intro-text {
+        font-size: 25px;
+    }
+}
+
+.splash {
+    /* absolute center .splash within .splash-container */
+    margin: 0 auto;
+    width: 100%;
+    margin-top: 12em;
+    text-align: left;
+}
+/* This is the main heading that appears on the blue section */
+
+.splash-head {
+    display: inline-block;
+    font-size: 5em;
+    font-weight: bold;
+    color: black;
+    border: 3px solid black;
+    padding: 0.25em 0.35em;
+    font-weight: 100;
+    border-radius: 5px;
+    line-height: 1em;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: 'Sacramento', cursive;
+    margin-top: 3em;
+}
+/* This is the subheading that appears on the blue section */
+
+.header h1 {
+    margin: 0;
+}
+
+.header .container {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.splash-subhead {
+    color: black;
+    letter-spacing: 0.05em;
+    opacity: 0.8;
+}
+.row {
+    margin: 0 2em !important;
+}
+.pure-menu.pure-menu-open.pure-menu-fixed {
+    border-bottom: 0px;
+}
+.pure-menu.pure-menu-open,
+.pure-menu.pure-menu-horizontal li .pure-menu-children {
+    background: black;
+    color: white;
+    text-align: center;
+}
+.pure-menu.pure-menu-open a,
+.pure-menu.pure-menu-horizontal li .pure-menu-children a,
+.pure-menu.pure-menu-open .pure-menu-heading,
+.pure-menu.pure-menu-horizontal li .pure-menu-children .pure-menu-heading {
+    color: white;
+}
+
+.pure-menu.pure-menu-open a:hover,
+.pure-menu.pure-menu-horizontal li .pure-menu-children a:hover {
+    color: black;
+    background: pink;
+}
+
+  .home-menu a {
+    color: white !important;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+  }
+  .home-menu a:hover,
+  .home-menu a:focus {
+    color: black !important;
+    background: pink !important;
+  }
+  

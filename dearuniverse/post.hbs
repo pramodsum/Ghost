@@ -1,0 +1,54 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<main class="content" role="main">
+
+   <article class="{{post_class}} blog-post" id="posts">
+        <h1 class="title">
+            <a href="{{url}}">{{title}}</a>
+        </h1>
+        <small>
+            <p class="date">
+              <span class="ion-calendar"></span>
+              <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
+            </p>
+        </small>
+        {{content}}
+
+        <div class="post-footer text-center">
+
+            <section id="tags">
+                <h1>
+                    Tags
+                    <br>
+                    <small>{{> "tags"}}</small>
+                </h1>
+            </section>
+
+            <section class="share">
+                <h1>
+                    Share this post
+                    <br>
+                    <small>
+                        <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-social"><i class="ion-social-twitter animated"></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-social"><i class="ion-social-facebook animated"></i></a>
+                        <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-social"><i class="ion-social-googleplus animated"></i></a>
+                        <a href="http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&media=https://s3-us-west-2.amazonaws.com/dearuniverse/profile.jpeg&description={{title}} | Dear Universe" class="btn-social"><i class="ion-social-pinterest animated"></i></a>
+                    </small>
+                </h1>
+            </section>
+
+        </div>
+
+    </article>
+
+</main>
+
+{{!-- http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=SumNinjaCode - {{title}}" --}}
+
+{{/post}}
