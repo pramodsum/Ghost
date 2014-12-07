@@ -1,0 +1,84 @@
+{{!< default}}
+
+{{! The comment above "< default" means - insert everything in this file into
+    the {body} of the default.hbs template, which contains our header/footer. }}
+
+{{! Everything inside the #post tags pulls data from the post }}
+{{#post}}
+
+<main class="content container" role="main">
+
+    <article class="post {{post_class}}">
+        <header class="text-center">
+            <h1 class="blog-post-title">
+
+            {{#if image }} 
+            <p><img src={{image}} style="margin:auto" class="thumbnail"/></p>
+            {{/if}}
+
+            <div class="title">{ <span class="title">{{title}}</span> }</div>
+            <small>
+              <p class="date">
+                <span class="ion-calendar"></span>
+                <time class="post-date" datetime="{{date format='YYYY-MM-DD'}}">{{date format="MMMM DD YYYY"}}</time>
+              </p>
+            </small>
+            <h1>
+            
+        </header>
+
+        <section class="post-content">
+            {{content}}
+        </section>
+
+        <footer class="post-footer text-center">
+
+            <section id="tags">
+                {{> "tags"}}
+            </section>
+            <br>
+
+            <section class="share">
+                <h4>
+                    Share this post
+                    <br><br>
+                    <small>
+                        <a href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}" class="btn-circle btn-social"><i class="ion-social-twitter animated"></i></a>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u={{url absolute="true"}}" class="btn-circle btn-social"><i class="ion-social-facebook animated"></i></a>
+                        <a href="https://plus.google.com/share?url={{url absolute="true"}}" class="btn-circle btn-social"><i class="ion-social-googleplus animated"></i></a>
+
+                        {{#if image }} 
+                            <a href="http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&media={{image}}&description={{title}} | SumNinjaCode" class="btn-circle btn-social"><i class="ion-social-pinterest animated"></i></a>
+                        {{else}}
+                            <a href="http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&media=https://s3-us-west-2.amazonaws.com/sumninjacode/img/pinterestpost.png&description={{title}} | SumNinjaCode" class="btn-circle btn-social"><i class="ion-social-pinterest animated"></i></a>
+                        {{/if}}
+                    </small>
+                </h4>
+            </section>
+
+            <section class="comments">
+                <div id="disqus_thread"></div>
+                    <script type="text/javascript">
+                        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                        var disqus_shortname = 'sumninjacode'; // required: replace example with your forum shortname
+
+                        /* * * DON'T EDIT BELOW THIS LINE * * */
+                        (function() {
+                            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                        })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+                    
+            </section>
+
+        </footer>
+
+    </article>
+
+</main>
+
+{{!-- http://www.pinterest.com/pin/create/button/?url={{url absolute="true"}}&media=http%3A%2F%2Ffarm8.staticflickr.com%2F7027%2F6851755809_df5b2051c9_z.jpg&description=SumNinjaCode - {{title}}" --}}
+
+{{/post}}

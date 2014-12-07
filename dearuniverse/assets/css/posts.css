@@ -1,0 +1,95 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.blog-post, 
+.blog-main {
+    padding: 10px 0;
+    font-family: josefin;
+}
+
+
+.blog-post.title, 
+.blog-main.title  {
+  font-family: Sacramento;
+  font-size: 3em;
+  padding-right: 10px;
+  margin-top: 0;
+  color: rgb(249, 162, 172);
+}
+.blog-post p .date, 
+.blog-main p .date {
+  color: rgb(253, 163, 171) !important;
+  font-family: josefin;
+}
+#posts {
+    padding: 0 2em;
+}
+.tags a {
+    padding: 0 2px;
+}
+
+.tags ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+    .tags ul li {
+        display: inline-block;
+    }
+
+    .tags ul .label-tag {
+        background: rgb(250, 205, 208);
+        color: black;
+    }
+
+    .tags ul .label-tag:hover {
+        background: rgb(223, 222, 153);
+        color: black;
+    }
+
+.commentBtn {
+  height: 3.4em;
+  background: #f2777a;
+}
+
+  .commentBtn h2 {
+    margin: 0;
+  }
+
+  #addComment .btn {
+    text-transform: uppercase;
+    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    border-radius: 4px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  #addComment .btn-default {
+    border: 0 !important;
+    color: black !important;
+    background: none;
+    background-color: pink !important;
+  }
+  #addComment .btn-default:hover,
+  #addComment .btn-default:focus {
+    border: 1px solid black !important;
+    color: black !important;
+    background-color: pink !important;
+  }

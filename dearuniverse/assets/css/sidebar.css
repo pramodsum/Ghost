@@ -1,0 +1,8 @@
+.sidebar-module .sidebar-header {
+  font-family: Sacramento;
+  font-size: 3em;
+  margin-top: 10px;
+}
+.sidebar-module img {
+    max-width: 150px;
+}

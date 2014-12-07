@@ -1,0 +1,52 @@
+footer {
+  background: black;
+  color: white;
+  bottom: 0;
+  width: 100%;
+  padding: 15px;
+  line-height: 1.25;
+}
+
+ footer ul {
+      margin-bottom: 0;
+  }
+ footer p {
+      margin: 0;
+  }
+
+ footer a {
+    color: pink;
+  }
+
+ footer input {
+    margin: 5px 0 !important;
+  }
+.sumedha-footer {
+    width: 100%;
+    padding: 0 15px;
+    padding-top: 10px;
+    color: black;
+  }
+    .sumedha-footer.issues {
+        border-left: 1px black;
+    }
+.copyright {
+    font-size: 14px;
+    margin-top: 6px;
+  }
+    .copyright.ion-heart {
+        color: pink;
+    }
+
+.fc-state-highlight {
+  background: pink;
+}
+
+.fc-event {
+  background: rgb(127, 146, 196);
+  border: none;
+  padding: 2px;
+}
+  .fc-event .fc-event-time, .fc-event .fc-event-title {
+    color: white;
+  }
